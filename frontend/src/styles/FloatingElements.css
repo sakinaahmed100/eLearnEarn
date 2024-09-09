@@ -1,0 +1,16 @@
+.floating-container {
+  position: fixed; /* Fixed to always stay in the background */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent floating elements from overflowing */
+  background: #1E3A8A; /* Darker blue background */
+  z-index: -1; /* Ensure it is in the background */
+}
+
+.floating-symbol {
+  position: absolute;
+  z-index: -1; /* Keep symbols in the background */
+  pointer-events: none; /* Disable pointer events to prevent any interaction */
+}

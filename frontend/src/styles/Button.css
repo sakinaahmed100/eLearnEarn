@@ -1,0 +1,29 @@
+.button {
+  background-color: transparent; /* Transparent background */
+  color: #007bff; /* Text color matching the border */
+  border: none; /* Remove default border */
+  border-bottom: 2px solid #007bff; /* Bottom border for styling */
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  outline: none; /* Remove outline on focus */
+}
+
+.button:hover {
+  color: #b0bfce; /* Darker text color on hover */
+  border-bottom-color: #ffffff; /* Darker bottom border on hover */
+}
+
+.button:focus {
+  color: #ffffff; /* Even darker text color on focus */
+  border-bottom-color: #ffffff; /* Even darker bottom border on focus */
+}
+
+.button:active {
+  color: #003d7a; /* Keep the darker text color when pressed */
+  border-bottom-color: #003d7a; /* Keep the darker bottom border when pressed */
+}

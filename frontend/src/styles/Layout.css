@@ -1,0 +1,73 @@
+/* src/css/Layout.css */
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.viewport{
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  position: fixed; 
+  top: 0;
+  width: 100vw; /* Full width */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* Adds a subtle blur to the background */
+  z-index: 2; /* Higher z-index to stay on top */
+  padding: 10px 5vw; /* Spacing inside the navbar */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Align items to the right */
+  align-items: center; /* Vertically center items */
+  box-shadow: 0 4px 6px rgba(71, 71, 83, 0.1); /* Subtle shadow for elevation effect */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+
+  h3{
+    color: white;
+  }
+}
+
+.navbar:hover {
+  background-color: rgba(37, 29, 143, 0.164); /* Make the navbar background fully transparent on hover */
+}
+
+/* Keep the other styles as they are */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Dark color for visibility */
+  font-weight: bold;
+}
+
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .page-content {
+    /* position: relative; */
+    z-index: 1; /* Above the floating elements */
+    /* padding: 2rem; */
+    /* background-color: #fff; Text color */
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 5vw;
+    margin-top: 10vh;
+  }
