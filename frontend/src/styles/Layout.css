@@ -30,7 +30,7 @@ body{
   transition: background-color 0.5s ease; /* Smooth transition for background color */
 
   h3{
-    color: white;
+    color: rgb(37, 29, 143);;
   }
 }
 
@@ -69,5 +69,5 @@ body{
     align-items: center;
     justify-content: center;
     padding: 2vh 5vw;
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
