@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/HomePage.css'; // Add your CSS file here
 import HeroImage from "../assets/heroImage.jpeg" 
+import image1 from "../assets/codeChallenge.jpeg"
+import image2 from "../assets/professionals.jpeg"
+import image3 from "../assets/acheivements.jpeg"
 
 const HomePage: React.FC = () => {
   return (
@@ -26,7 +29,7 @@ const HomePage: React.FC = () => {
         <h2>Why Choose Us?</h2>
         <div className="feature">
           <img 
-            src="https://via.placeholder.com/150" 
+            src={image1} 
             alt="Interactive Learning" 
             className="feature-image"
           />
@@ -35,7 +38,7 @@ const HomePage: React.FC = () => {
         </div>
         <div className="feature">
           <img 
-            src="https://via.placeholder.com/150" 
+            src={image2}
             alt="Expert Instructors" 
             className="feature-image"
           />
@@ -44,7 +47,7 @@ const HomePage: React.FC = () => {
         </div>
         <div className="feature">
           <img 
-            src="https://via.placeholder.com/150" 
+            src={image3}
             alt="Certification" 
             className="feature-image"
           />

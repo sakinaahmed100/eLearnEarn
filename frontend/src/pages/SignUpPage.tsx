@@ -1,19 +1,19 @@
-// src/components/Signup.tsx
 import React, { useState } from 'react';
-// src/components/Signup.tsx
 import '../styles/Signup.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom'; // Import Link for navigation
+import { useNavigate } from 'react-router-dom';
 
 const Signup: React.FC = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState<string>('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // You will call the backend API here (FastAPI)
+    // call the backend API here (FastAPI)
     try {
       const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/signup`, {
         username,
@@ -21,6 +21,7 @@ const Signup: React.FC = () => {
         password,
       });
       setMessage('User signed up successfully!');
+      navigate('/signin');
     } catch (error) {
       setMessage('Error signing up. Please try again.');
     }
